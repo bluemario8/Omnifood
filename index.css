@@ -115,14 +115,16 @@ html, body {
     flex-direction: column;
     margin-bottom: 60px;
 }
-.info-header h2 {
+.info-header h2,
+.mobile-header h2 {
     text-transform: uppercase;
     font-weight: 300;
     text-align: center;
     margin-bottom: 30px;
     font-size: 180%;
 }
-.info-header h2:after {
+.info-header h2:after,
+.mobile-header h2:after {
     display: block;
     height: 2px;
     width: 100px;
@@ -192,6 +194,18 @@ html, body {
     transform: scale(1);
 }
 .mobile {
+    display: flex;
+    flex-direction: column;
     padding: 80px 0;
     background-color: #f4f4f4;
+}
+.half-width-box {
+    display: flex;
+    background-color: white;
+    width: 50%;
+    padding: 0 20px;
+}
+.phone-img {
+    align-self: flex-end;
+    width: 80%;
 }
