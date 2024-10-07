@@ -38,7 +38,6 @@ html, body {
     display: flex;
     max-width: 1140px;
     margin: 0 auto;
-    align-items: center;
 }
 .logo {
     height: 100px;
@@ -50,6 +49,7 @@ html, body {
     flex-grow: 1;
     justify-content: flex-end;
     list-style: none;
+    margin-top: 55px;
 }
 .navigation a {
     color: white;
@@ -91,6 +91,7 @@ html, body {
     background-color: #e67e22;
     border: 1px solid #e67e22;
     color: white;
+    margin-right: 16px;
 }
 .btn-full:hover, .btn-full:active {
     border: 1px solid #cf6d17;
@@ -104,5 +105,69 @@ html, body {
     border: 1px solid #cf6d17;
     color: white;
 }
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0;
+}
+.info-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+.info-header h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 180%;
+}
+.info-header h2:after {
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color: #e67e22;
+    content: " ";
+    margin: auto;
+    margin-top: 30px;
+}
+.info-text {
+    margin-left: 15%;
+    width: 70%;
+    line-height: 145%;
+}  
+.boxes-container {
+    display: flex;
+    width: 100%; 
+    flex-wrap: wrap;
+}
+.box {
+    width: 21%;
+    min-width: 200px;
+    margin-right: 3%;
+    margin-left: 1%;
+}
+.icon-big {
+    font-size: 350%;
+    color: #e67e22;
+    margin-bottom: 10px;
+    --ionicon-stroke-width: 20px;
+}
+.box h3 {
+    font-weight: 300;
+    font-size: 110%;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+.favorites {
+    display: flex;
+}
+.meal-img {
+    width: 25%;
+    height: auto;
 
-  
+}
