@@ -97,7 +97,8 @@ html, body {
     color: white;
     margin-right: 16px;
 }
-.btn-full:hover, .btn-full:active {
+.btn-full:hover, .btn-full:active, 
+input[type=submit] {
     border: 1px solid #cf6d17;
 }
 .btn-ghost {
@@ -380,13 +381,17 @@ cite img {
 }
 .section-form {
     padding: 80px 0;
+    background-color: #f4f4f4;
 }
 .contact-form {
     display: flex;
     width: 100%;
+    flex-direction: column;
 }
 .form-row {
     width: 60%;
+    margin: 10px 0;
+    align-self: center;
 }
 .width-1-of-3 {
     display: flex;
@@ -400,14 +405,53 @@ textarea {
     height: 100px;
 }
 input[type=checkbox] {
-    margin: 10px 5px 10px 0;
+    margin: 8px 8px 8px 0;
 }
 input[type=text],
 input[type=email],
 select,
 textarea {
+    font-size: 100%;
     width: 100%;
     padding: 7px;
     border-radius: 3px;
     border: 1px solid #ccc;
+}
+input[type=submit] {
+    font-size: 100%;
+}
+*:focus {
+    outline: none;
+}
+.footer {
+    padding: 80px 0;
+    background-color: #333;
+    font-size: 80%;
+    color: #888;
+}
+.footer-bar {
+    display: flex;
+    flex-grow: 1;
+}
+.footer-nav {
+    display: flex;
+    list-style: none;
+}
+.flex-end {
+    justify-content: flex-end;
+}
+.footer-nav li {
+    margin-right: 20px;
+}
+.footer-nav li:last-child {
+    margin-right: 0px;
+}
+.footer-nav li a {
+    color: #888;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
 }
