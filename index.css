@@ -307,6 +307,7 @@ h3 {
 .testimonial-third {
     display: flex;
     flex-direction: column;
+    padding: 0px 10px;
     max-width: 33%;
 }
 blockquote {
